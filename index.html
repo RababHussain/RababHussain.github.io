@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabab's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4f7deb2b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Rabab Hussain</span><br>from Hyderabad, India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.PNG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>A third year Engineering student with an 8.012 CGPA, passionately driven towards writing code that makes a difference. My skillset specializes in but does not stop around development and design of web apps, databases and computer networks. I have solved 500+ questions on various coding platforms likewise GFG and Leetcode. I am looking for a role that offers me an insight of practical knowledge and implementation. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, PHP, C++, HTML, CSS, JavaScript</li>
+                            <li><span>Databases</span><br>MongoDB, MySQL</li>
+                            <li><span>Tools</span><br>Git, Tableau, Canva, Figma, VSCode</li>
+                            <li><span>Subjects</span><br>DBMS, Computer Networks, Data Structures and Algorithms</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Khana Mangana</span><br>A food ordering platform built using PHP and MySQL</li>
+                            <li><span>Fraud Detector</span><br>A python based credit card fraud detection system using Machine Learning</li>
+                            <li><span>Shop Flix</span><br>User friendly react native marketplace to sell used items</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Bachelor Of Engineering in I.T <br>from Lords Institute of Engineering and Technology <br>CGPA : 8.012 <br>Graduating : 2023</li>
+                            <li><span>2019</span><br>Science with Maths (Intermediate) <br>from Villa Marie Inter College <br>CGPA : 8.49 <br>Graduated: 2019</li>
+                            <li><span>2017</span><br>High School <br>from Abu Dhabi Indian School <br>CGPA : 9.2 <br>Graduated: 2017</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <br><br><br><br><br><br><br> -->
+    </div>
+
+<!-- --------------services--------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Portfolios, marketplaces, blogs, you name it! I can create beautiful interfaces for your business with appropriate color schemes and formats</p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Graphic Designing</h2>
+                <p>Brand logos, flyers or media files to suit any occasion and business needs with conscise yet crisp detailing</p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>Android apps built using Android SDK in Java programming language for a user-friendly environment on-the-go!</p>
+                <a href="#contact">Learn More</a>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</div>
+<!-- -----------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Khana Mangana</h3>
+                    <p>A PHP and MySQL based platform to order food online, with separate client and admin sides to list, manage and update food items and much more.</p>
+                    <a href="https://github.com/RababHussain/KhanaMangana.github.io"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Fraud Detection System</h3>
+                    <p>Python programmed system using Machine Learning algorithms to accurately detect frauds in both online and offline credit card transactions.</p>
+                    <a href="https://github.com/RababHussain/Fraud--Detection"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>ShopFlix</h3>
+                    <p>Developed entirely using React Native, this native app is a marketplace to sell used items you no longer need. Comes with endless possibilities and a smooth interface to add and view & contact sellers.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/RababHussain" class="btn">See More</a>
+    </div>
+    
+</div>
+<!-- ---------contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane">   <a href="mailto: rabbumashi@gmail.com">rabbumashi@gmail.com</a></i></p>
+                <p><i class="fa-solid fa-square-phone">  <a href="tel:8978121470">+91 8978121470</a></i></p>
+                <div class="social-icons">
+                    <a href="https://wa.me/+918978121470?text=Start a chat by sending me a Hi!"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/rababnaqvi143/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rababfatima209/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/RababHussain"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume-Rabab.pdf" Download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<!-- <br><br><br><br><br> -->
+    <div class="copyright">
+        <p>Copyright © 2022. Made with <i class="fa-solid fa-heart"></i> by Rabab Hussain.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById('sidemenu');
+    function openmenu(){
+        sidemenu.style.right = "0";
+        
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+</script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziZQBaQ42Y8r39dV1T6BK3bCeCi_6rlAATAkIQjbG4IPQW24vfmeYS8opy7x8SgJDx/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
